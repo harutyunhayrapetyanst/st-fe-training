@@ -1,0 +1,43 @@
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+
+export class CountriesApi {
+    baseUrl = 'https://api.sampleapis.com';
+
+    constructor() {
+        console.log('=========Api constructor==========');
+    }
+
+    getCountries(): Promise<AxiosResponse<CountryModel[]>> {
+        const url = '/countries/countries';
+
+        let options = <AxiosRequestConfig>{
+            baseURL: this.baseUrl,
+            url,
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
+            params: {},
+        };
+
+        return axios.request(options);
+    }
+}
+
+export interface CountryModel {
+    abbreviation: string;
+    capital: string;
+    currency: string;
+    name: string;
+    phone: string;
+    population: number;
+    media: Media;
+    id: number;
+}
+
+export interface Media {
+    flag: string;
+    emblem: string;
+    orthographic: string;
+}
