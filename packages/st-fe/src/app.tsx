@@ -6,7 +6,7 @@ import '@servicetitan/design-system/dist/system.css';
 import './styles.css';
 import { Frame } from '@servicetitan/design-system';
 
-import { CountriesPage } from './countries/components/countries-page';
+import { CountriesPage } from './countries-final/components/countries-page';
 
 export const App: FC = () => {
     return (
