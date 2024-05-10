@@ -1,0 +1,17 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "registry": "https://verdaccio.servicetitan.com"
+    },
+    "version": {
+      "ignore": [
+        "**/*.md"
+      ]
+    }
+  }
+}

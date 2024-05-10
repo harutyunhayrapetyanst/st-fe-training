@@ -1,0 +1,6 @@
+{
+    "extends": ["@servicetitan/stylelint-config"],
+    "rules": {
+        "@servicetitan/function-url-no-absolute": null
+    }
+}

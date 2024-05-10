@@ -1,0 +1,3 @@
+**/*.api.ts
+**/*/dist
+node_modules

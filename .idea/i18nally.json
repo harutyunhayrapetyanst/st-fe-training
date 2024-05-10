@@ -1,0 +1,62 @@
+{
+  "version" : "1.2",
+  "profiles" : [ {
+    "id" : "7f33b4b6-7f1e-44d1-ad08-54ff100fc0c7",
+    "name" : "menu",
+    "keyNamingPattern" : "CAMEL_CASE_PATTERN",
+    "sink" : {
+      "id" : "21d8e4f1-ef2a-43ea-864a-c654ded54dfa",
+      "type" : "singleFile",
+      "pathToFile" : "$PROJECT_DIR$/packages/pto-management/src/i18n/translations/en/menu.json",
+      "fileType" : "json",
+      "nestingType" : "DOT",
+      "placeholderFormatterName" : "I18NEXT"
+    },
+    "sources" : [ {
+      "id" : "199a5ff1-bc3d-403d-8b10-0b135e645e8a",
+      "type" : "jsx",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "t('%key%', %map%, '%namespace%')",
+      "attributeReplacementTemplate" : "",
+      "inlineTagsReplacementTemplate" : "",
+      "recognizedReplacementTemplates" : [ ],
+      "inlineTagNames" : [ ],
+      "translatableAttributeNames" : [ "alt", "description", "placeholder", "label", "title", "backLabel", "aria-label", "content" ],
+      "skipDefaultNamespace" : true
+    } ]
+  }, {
+    "id" : "294738bb-e302-4bd2-b737-4d0bf8eea41c",
+    "name" : "policy-setup",
+    "keyNamingPattern" : "CAMEL_CASE_PATTERN",
+    "sink" : {
+      "id" : "c5fe93e8-2f66-4257-af97-cfed3cafbb18",
+      "type" : "singleFile",
+      "pathToFile" : "$PROJECT_DIR$/packages/pto-management/src/i18n/translations/en/policy-setup.json",
+      "fileType" : "json",
+      "nestingType" : "DOT",
+      "placeholderFormatterName" : "I18NEXT"
+    },
+    "sources" : [ {
+      "id" : "155673bc-21db-42b4-a701-2ad3df5cdeb4",
+      "type" : "jsx",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "t('%key%', %map%, '%namespace%')",
+      "attributeReplacementTemplate" : "",
+      "inlineTagsReplacementTemplate" : "",
+      "recognizedReplacementTemplates" : [ ],
+      "inlineTagNames" : [ ],
+      "translatableAttributeNames" : [ "alt", "description", "placeholder", "label", "title", "backLabel", "aria-label", "content" ],
+      "skipDefaultNamespace" : true
+    } ]
+  } ],
+  "ignores" : {
+    "valuesInProject" : [ "use strict" ],
+    "valuesInFile" : { },
+    "filesInProject" : [ ],
+    "unignoredFunctionNames" : [ ],
+    "unignoredFunctionArguments" : { },
+    "ignoredArrayKeys" : [ "template", "date", "dateFormat", "el", "query", "type", "sql", "layout", "component", "condition", "name", "selector", "id", "class", "key", "middleware" ]
+  }
+}

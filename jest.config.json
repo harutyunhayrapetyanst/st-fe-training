@@ -1,0 +1,28 @@
+{
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "packages/application/src/modules/**/*.store.ts"
+  ],
+  "coverageReporters": [
+    "json-summary",
+    "text",
+    "lcov"
+  ],
+  "coveragePathIgnorePatterns": [
+    "node_modules",
+    "test-config",
+    "interfaces",
+    "jestGlobalMocks.ts",
+    ".module.ts",
+    ".api.ts",
+    ".mock.ts"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 0,
+      "functions": 0,
+      "lines": 0,
+      "statements": 0
+    }
+  }
+}
