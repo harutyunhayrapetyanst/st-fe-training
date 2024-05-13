@@ -1,5 +1,9 @@
-export const CountriesTable = () => {
-    const countries: any[] = [];
+import { useDependencies } from '@servicetitan/react-ioc';
+import { CountriesStore } from '../storss/countries.store';
+import { observer } from 'mobx-react';
+
+export const CountriesTable = observer(() => {
+    const [countriesStore] = useDependencies<[CountriesStore]>(CountriesStore);
 
     return (
         <table cellPadding={10} cellSpacing={1}>
@@ -12,7 +16,7 @@ export const CountriesTable = () => {
                 </tr>
             </thead>
             <tbody>
-                {countries.map(country => (
+                {countriesStore.sortedCountries.map(country => (
                     <tr key={country.id}>
                         <td>{country.id}</td>
                         <td>{country.name}</td>
@@ -23,4 +27,4 @@ export const CountriesTable = () => {
             </tbody>
         </table>
     );
-};
+});

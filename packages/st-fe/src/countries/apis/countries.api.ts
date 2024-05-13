@@ -1,11 +1,9 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import { injectable } from '@servicetitan/react-ioc';
 
+@injectable()
 export class CountriesApi {
     baseUrl = 'https://api.sampleapis.com';
-
-    constructor() {
-        console.log('=========Api constructor==========');
-    }
 
     getCountries(): Promise<AxiosResponse<CountryModel[]>> {
         const url = '/countries/countries';
