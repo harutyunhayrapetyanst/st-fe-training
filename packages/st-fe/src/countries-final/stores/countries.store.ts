@@ -38,6 +38,6 @@ export class CountriesStore {
 
         this.isLoading = false;
 
-        this.countries = response.data;
+        this.countries = response.data.map(x => ({ ...x, population: +(x.population ?? 0) }));
     };
 }
