@@ -1,0 +1,19 @@
+{
+  "name": "@servicetitan/forms",
+  "version": "1.0.0",
+  "description": "micro-frontend for st",
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "formstate": "^2.1.0"
+  },
+  "cli": {
+    "web-component": true,
+    "webpack": {
+      "port": 8009
+    }
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
